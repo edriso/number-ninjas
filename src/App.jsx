@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], { basename: import.meta.env.BASE_URL.replace(/\/$/, '') });
 
 function App() {
   return <RouterProvider router={router} />;
